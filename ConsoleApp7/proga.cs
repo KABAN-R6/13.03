@@ -6,14 +6,20 @@ namespace ConsoleApp7
 {
     class proga : Iobservable
     {
-        datainfo sinfo;
-
-        List<Iobserver> observers;
+        List<user> users;
+        List<cellebration> cellebrations;
+        
         public proga()
         {
-            observers = new List<Iobserver>();
-            sinfo = new datainfo();
+            users = new List<user>()
+            {
+                new user("",Root.Vip)
+                new user("",Root.)
+                new user("",Root.)
+            }
+            celebration = new List<celebratino>
         }
+        
         public void Addobserver(Iobserver o)
         {
             observers.Add(o);
