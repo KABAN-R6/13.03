@@ -13,7 +13,7 @@ namespace ConsoleApp7
             _name = name;
             _root = root;
         }
-        public void Notify()
+        public void Notify()  
         {
             
         }
