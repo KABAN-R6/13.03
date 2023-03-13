@@ -6,13 +6,14 @@ namespace ConsoleApp7
 {
     class pipl : Iobserver
     {
-        public string Name = "";
-        Iobservable store;
+        public string Name = " Коля";
+        public string status = "VIP";
+        Iobservable proga;
         public pipl(string name, Iobservable obs)
         {
             this.Name = name;
-            store = obs;
-            store.Addobserver(this);
+            proga = obs;
+            proga.Addobserver(this);
         }
         public void Update(object ob)
         {
@@ -24,8 +25,8 @@ namespace ConsoleApp7
         }
         public void StopStore()
         {
-            store.RemoveObserver(this);
-            store = null;
+            proga.RemoveObserver(this);
+            proga = null;
         }
     }
 }

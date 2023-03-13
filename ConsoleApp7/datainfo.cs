@@ -6,6 +6,5 @@ namespace ConsoleApp7
 {
     class datainfo
     {
-        public int discount { get; set; }
     }
 }

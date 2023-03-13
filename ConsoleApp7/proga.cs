@@ -31,6 +31,6 @@ namespace ConsoleApp7
                 o.Update(sinfo);
             }
         }
-        
+                
     }
 }

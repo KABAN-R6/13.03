@@ -13,6 +13,10 @@ namespace ConsoleApp7
             int b = Convert.ToInt32(Console.ReadLine());
             DateTime date1 = new DateTime(2023, a, b);
             Console.WriteLine(date1);
+            DateTime date2 = new DateTime();
+             date2 = date1.AddDays(7);
+            Console.WriteLine(date2);
+
 
         }
     }

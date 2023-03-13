@@ -6,26 +6,27 @@ namespace ConsoleApp7
 {
     class pipl3 : Iobserver
     {
-        public string Name = "";
-        Iobservable store;
+        public string Name = "Настя";
+        public string status = "Amateur";
+        Iobservable proga;
         public pipl3(string name, Iobservable obs)
         {
             this.Name = name;
-            store = obs;
-            store.Addobserver(this);
+            proga = obs;
+            proga.Addobserver(this);
         }
         public void Update(object ob)
         {
-            datainfo storeInfo = (datainfo)ob;
-            if (storeInfo.discount < 10)
+            datainfo Info = (datainfo)ob;
+            if ()
                 Console.WriteLine();
             else
                 Console.WriteLine();
         }
         public void StopStore()
         {
-            store.RemoveObserver(this);
-            store = null;
+            proga.RemoveObserver(this);
+            proga = null;
         }
     }
 }
